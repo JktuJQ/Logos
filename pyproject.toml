@@ -3,4 +3,13 @@ name = "logos"
 version = "0.1.0"
 description = "A knowledge graph for mathematical textbooks"
 requires-python = ">=3.12"
-dependencies = []
+
+dependencies = [
+    "pydantic>=2.14.4",
+]
+
+[dependency-groups]
+gather = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+]
